@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     async function getAPI() {
-      const url = `https://pokeapi.co/api/v2/pokemon/${elNombreDelPokemon}`;
+      const url = `http://pokeapi.co/api/v2/pokemon/${elNombreDelPokemon}`;
       const respuesta = await fetch(url);
       const json = await respuesta.json();
       setData(json);
